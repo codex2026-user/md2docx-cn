@@ -6,6 +6,7 @@ body:
     attributes:
       value: |
         Issue 是公开页面。请勿上传未发表全文、客户文件、个人信息、密钥或付款信息。
+        提交后请将 Issue 链接发送至业务邮箱 1066536086@qq.com；支付宝付款方式只通过非公开渠道提供。
   - type: dropdown
     id: service
     attributes:
@@ -50,4 +51,6 @@ body:
       label: 提交确认
       options:
         - label: 我确认没有在公开 Issue 中提供敏感数据或未授权材料。
+          required: true
+        - label: 我理解提交需求不等于下单，范围、价格、付款节点和交付时间以付款前的书面确认为准。
           required: true
