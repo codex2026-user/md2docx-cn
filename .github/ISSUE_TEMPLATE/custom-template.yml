@@ -1,8 +1,6 @@
 name: 定制排版需求
-description: 申请 Word 模板、批量转换或工作流集成报价
+description: 申请 Word 模板、批量转换、OEM 集成或维护支持报价
 title: "[定制] "
-labels:
-  - customization
 body:
   - type: markdown
     attributes:
@@ -16,6 +14,8 @@ body:
         - 调整现有排版参数
         - 制作专用 Word 模板
         - 批量转换或工作流集成
+        - 团队内部工具或 OEM 集成
+        - 持续维护和优先支持
     validations:
       required: true
   - type: textarea
@@ -31,6 +31,19 @@ body:
     attributes:
       label: 希望完成时间
       placeholder: 例如：一周内
+  - type: dropdown
+    id: budget
+    attributes:
+      label: 预算区间
+      description: 仅用于判断方案范围，不代表最终报价或下单。
+      options:
+        - 100 元以内
+        - 100–499 元
+        - 500–999 元
+        - 1000 元及以上
+        - 暂不确定
+    validations:
+      required: true
   - type: checkboxes
     id: confirmation
     attributes:
@@ -38,4 +51,3 @@ body:
       options:
         - label: 我确认没有在公开 Issue 中提供敏感数据或未授权材料。
           required: true
-
