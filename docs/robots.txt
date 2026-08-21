@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codex2026-user.github.io/md2docx-cn/sitemap.xml

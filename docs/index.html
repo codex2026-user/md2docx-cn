@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>md2docx-cn｜中文 Markdown 一键转 Word</title>
+    <meta
+      name="description"
+      content="把中文 Markdown 文章转换成排版整洁的 Word 文档。免费开源、本地处理，并提供模板、批量转换和团队集成服务。"
+    >
+    <meta name="theme-color" content="#0b4f8a">
+    <link rel="canonical" href="https://codex2026-user.github.io/md2docx-cn/">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="md2docx-cn｜中文 Markdown 一键转 Word">
+    <meta
+      property="og:description"
+      content="免费开源、本地处理，支持中文排版与模板定制。"
+    >
+    <meta property="og:url" content="https://codex2026-user.github.io/md2docx-cn/">
+    <meta property="og:image" content="https://codex2026-user.github.io/md2docx-cn/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="md2docx-cn｜中文 Markdown 一键转 Word">
+    <meta
+      name="twitter:description"
+      content="免费开源、本地处理，支持中文排版与模板定制。"
+    >
+    <meta name="twitter:image" content="https://codex2026-user.github.io/md2docx-cn/og.png">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "md2docx-cn",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "description": "把中文 Markdown 文章转换成排版整洁的 Word 文档。",
+        "downloadUrl": "https://github.com/codex2026-user/md2docx-cn/releases/latest",
+        "license": "https://opensource.org/license/mit",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">md2docx-cn</a>
+      <nav aria-label="主要导航">
+        <a href="#preview">效果</a>
+        <a href="#services">服务</a>
+        <a href="#order">下单流程</a>
+        <a href="https://github.com/codex2026-user/md2docx-cn">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">免费开源 · 本地处理 · 中文排版</p>
+          <h1>中文 Markdown<br>一键转 Word</h1>
+          <p class="hero-lead">
+            把文章、方案和投稿稿件转换成层级清晰、字体统一的 DOCX。免费版立即使用；
+            单位模板、投稿格式和批量流程可以按需定制。
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/codex2026-user/md2docx-cn/releases/latest"
+            >免费下载最新版</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/codex2026-user/md2docx-cn/issues/new?template=custom-template.yml"
+            >提交定制需求</a>
+          </div>
+          <ul class="trust-list" aria-label="产品特点">
+            <li>无需账号或 API 密钥</li>
+            <li>文档不会上传</li>
+            <li>Windows、macOS、Linux 可用</li>
+          </ul>
+        </div>
+
+        <div class="conversion-card" aria-label="转换流程示意">
+          <div class="file-card markdown-card">
+            <span class="file-label">输入</span>
+            <strong>article.md</strong>
+            <span># 标题</span>
+            <span>- 内容要点</span>
+          </div>
+          <div class="conversion-arrow" aria-hidden="true">→</div>
+          <div class="file-card word-card">
+            <span class="file-label">输出</span>
+            <strong>article.docx</strong>
+            <span class="word-line"></span>
+            <span class="word-line short"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="产品能力概览">
+        <div><strong>3.10+</strong><span>Python 版本</span></div>
+        <div><strong>100%</strong><span>本地转换</span></div>
+        <div><strong>MIT</strong><span>开源许可</span></div>
+        <div><strong>DOCX</strong><span>标准输出</span></div>
+      </section>
+
+      <section id="preview" class="preview-section section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">真实生成效果</p>
+          <h2>不是概念图，下面就是输出结果</h2>
+          <p>由仓库示例 Markdown 直接转换并通过 Word 渲染，保留真实字体、缩进和间距。</p>
+        </div>
+        <figure class="document-preview">
+          <img
+            src="word-preview.png"
+            alt="md2docx-cn 生成的中文 Word 文档，包含标题、项目符号、编号步骤和引用"
+            width="1076"
+            height="865"
+          >
+          <figcaption>示例输出：标题层级、正文、列表、编号和引用样式</figcaption>
+        </figure>
+      </section>
+
+      <section class="feature-section section-shell">
+        <div class="section-heading compact">
+          <p class="eyebrow">适合这些工作</p>
+          <h2>把时间留给内容，不再反复调格式</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="feature-number">01</span>
+            <h3>投稿与材料报送</h3>
+            <p>统一中文字体、字号、首行缩进、行距和页边距。</p>
+          </article>
+          <article>
+            <span class="feature-number">02</span>
+            <h3>公众号内容归档</h3>
+            <p>把 Markdown 原稿转为便于审阅、留档和交付的 Word 文件。</p>
+          </article>
+          <article>
+            <span class="feature-number">03</span>
+            <h3>重复批量处理</h3>
+            <p>通过命令行稳定生成，不必每次手动复制和调整样式。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="services-section">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow light">按需定制</p>
+            <h2>免费工具解决通用排版，付费服务解决专用流程</h2>
+          </div>
+          <div class="price-grid">
+            <article class="price-card">
+              <p class="price-kicker">参数调整</p>
+              <p class="price"><strong>99</strong> 元</p>
+              <p>调整一套字体、字号、行距、缩进或页边距参数。</p>
+            </article>
+            <article class="price-card featured">
+              <p class="price-kicker">专用模板</p>
+              <p class="price"><strong>299</strong> 元</p>
+              <p>制作一套指定 Word 排版模板，包含一次修改。</p>
+            </article>
+            <article class="price-card">
+              <p class="price-kicker">批量与集成</p>
+              <p class="price"><strong>699</strong> 元起</p>
+              <p>目录批量转换、命名规则、失败记录或现有流程接入。</p>
+            </article>
+          </div>
+          <p class="pricing-note">最终报价以输入格式、模板数量、交付环境和验收范围为准。</p>
+        </div>
+      </section>
+
+      <section id="order" class="order-section section-shell">
+        <div class="section-heading compact">
+          <p class="eyebrow">清楚再付款</p>
+          <h2>三步开始合作</h2>
+        </div>
+        <ol class="order-steps">
+          <li>
+            <span>1</span>
+            <div>
+              <h3>公开描述非敏感需求</h3>
+              <p>在 GitHub Issue 说明用途、格式和时间，不上传客户文件或隐私材料。</p>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <div>
+              <h3>邮件确认范围和报价</h3>
+              <p>通过业务邮箱确认交付内容、价格、修改次数、时间和验收标准。</p>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <div>
+              <h3>支付宝付款后开始</h3>
+              <p>付款方式只通过业务邮箱私下提供，到账后按约定制作和交付。</p>
+            </div>
+          </li>
+        </ol>
+        <div class="order-actions">
+          <a
+            class="button button-primary"
+            href="https://github.com/codex2026-user/md2docx-cn/issues/new?template=custom-template.yml"
+          >填写定制需求</a>
+          <a class="email-link" href="mailto:1066536086@qq.com">1066536086@qq.com</a>
+        </div>
+        <p class="privacy-note">
+          支付宝收款码、付款截图、交易单号和客户文件不会发布在 GitHub 或本页面。
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="section-shell footer-inner">
+        <p><strong>md2docx-cn</strong><br>中文 Markdown 到 Word 的本地转换工具</p>
+        <div>
+          <a href="https://github.com/codex2026-user/md2docx-cn">查看源码</a>
+          <a href="https://github.com/codex2026-user/md2docx-cn/blob/main/COMMERCIAL.md">商业说明</a>
+          <a href="https://github.com/codex2026-user/md2docx-cn/blob/main/PAYMENT.md">付款说明</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
