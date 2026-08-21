@@ -1,7 +1,21 @@
 # md2docx-cn
 
+[![tests](https://github.com/codex2026-user/md2docx-cn/actions/workflows/tests.yml/badge.svg)](https://github.com/codex2026-user/md2docx-cn/actions/workflows/tests.yml)
+[![release](https://img.shields.io/github/v/release/codex2026-user/md2docx-cn)](https://github.com/codex2026-user/md2docx-cn/releases/latest)
+
 把 UTF-8 Markdown 中文文章转换成排版整洁的 Word 文档，适合投稿、方案、
 公众号长文留档和日常办公交付。
+
+[免费下载最新版](https://github.com/codex2026-user/md2docx-cn/releases/latest) ·
+[提交定制需求](https://github.com/codex2026-user/md2docx-cn/issues/new?template=custom-template.yml) ·
+[邮件咨询](mailto:1066536086@qq.com)
+
+## 实际效果
+
+下面是仓库内 `examples/sample.md` 经过本工具转换后的真实 Word 页面，预览图由生成的
+DOCX 直接渲染，未使用 AI 模拟排版。
+
+![md2docx-cn 生成的中文 Word 文档预览](docs/word-preview.png)
 
 ## 能做什么
 
@@ -10,18 +24,20 @@
 - 写入文档标题与作者元数据。
 - Windows、macOS 和 Linux 均可运行，输入文件保持在本机处理。
 
-## 快速开始
+## 30 秒开始使用
 
 需要 Python 3.10 或更高版本。
 
 ```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install -e .
-md2docx-cn examples/sample.md -o sample.docx --author "你的名字"
+python -m pip install "https://github.com/codex2026-user/md2docx-cn/releases/download/v0.1.1/md2docx_cn-0.1.1-py3-none-any.whl"
+md2docx-cn article.md -o article.docx --author "你的名字"
 ```
 
-macOS 或 Linux 激活环境时使用 `source .venv/bin/activate`。
+`article.md` 替换为自己的 Markdown 文件。文件只在本机处理，不会上传。
+
+需要查看源码或其他版本，可进入
+[Releases](https://github.com/codex2026-user/md2docx-cn/releases)；开发者也可以克隆仓库后
+使用 `python -m pip install -e .` 安装。
 
 ## 支持的 Markdown
 
