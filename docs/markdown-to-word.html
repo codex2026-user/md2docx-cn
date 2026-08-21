@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Markdown 转 Word：三种方法与中文排版指南</title>
+    <meta
+      name="description"
+      content="Markdown 怎么转 Word？比较复制粘贴、Pandoc 和 md2docx-cn 三种方法，并说明中文字体、缩进、行距和投稿模板的处理方式。"
+    >
+    <meta name="theme-color" content="#0b4f8a">
+    <link
+      rel="canonical"
+      href="https://codex2026-user.github.io/md2docx-cn/markdown-to-word.html"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="Markdown 转 Word：三种方法与中文排版指南">
+    <meta
+      property="og:description"
+      content="从临时复制到可重复转换，选择适合自己的 Markdown 转 Word 方法。"
+    >
+    <meta
+      property="og:url"
+      content="https://codex2026-user.github.io/md2docx-cn/markdown-to-word.html"
+    >
+    <meta property="og:image" content="https://codex2026-user.github.io/md2docx-cn/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://codex2026-user.github.io/md2docx-cn/og.png">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">md2docx-cn</a>
+      <nav aria-label="主要导航">
+        <a href="index.html#preview">实际效果</a>
+        <a href="index.html#services">定制服务</a>
+        <a href="https://github.com/codex2026-user/md2docx-cn">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <header class="guide-header">
+        <div class="section-shell">
+          <p class="eyebrow">实用教程</p>
+          <h1>Markdown 转 Word：三种方法与中文排版指南</h1>
+          <p class="guide-lead">
+            临时转换一篇文章和长期批量处理，适合的方法并不相同。下面比较三种常见路线，
+            并给出中文文档最容易出问题的排版检查项。
+          </p>
+        </div>
+      </header>
+
+      <article class="article-body section-shell">
+        <h2>先看结论</h2>
+        <ul>
+          <li>只转换一次、格式要求不高：可以复制到 Word 后手动整理。</li>
+          <li>需要完整 Markdown 生态和丰富参数：使用 Pandoc。</li>
+          <li>主要处理中文文章、希望开箱即用：使用 md2docx-cn。</li>
+          <li>必须匹配单位或投稿模板：先拿到目标样例，再做专用模板适配。</li>
+        </ul>
+
+        <h2>方法一：复制到 Word 后手动整理</h2>
+        <section class="method-card">
+          <span class="method-label">适合一次性任务</span>
+          <h3>优点是马上能做，缺点是每次都要重复</h3>
+          <p>
+            对于短文，可以先在 Markdown 编辑器中预览，再复制到 Word。之后手动统一标题、
+            正文字体、首行缩进、行距和页边距。
+          </p>
+          <p>
+            这种方式不需要安装工具，但内容较长、列表较多或需要多次修改时，容易出现样式
+            不一致，也难以复用同一套规则。
+          </p>
+        </section>
+
+        <h2>方法二：使用 Pandoc</h2>
+        <section class="method-card">
+          <span class="method-label">适合熟悉命令行的用户</span>
+          <h3>通用能力强，可继续配置参考文档</h3>
+          <p>
+            Pandoc 是通用文档转换工具，支持 DOCX 输出。安装后，基础命令如下：
+          </p>
+          <pre class="code-block"><code>pandoc article.md -o article.docx</code></pre>
+          <p>
+            复杂场景可以继续研究参考文档、元数据和过滤器。准确参数以
+            <a href="https://pandoc.org/MANUAL.html">Pandoc 官方手册</a>为准。
+          </p>
+        </section>
+
+        <h2>方法三：使用 md2docx-cn</h2>
+        <section class="method-card recommended">
+          <span class="method-label">中文文章推荐</span>
+          <h3>把常见中文排版规则放进转换流程</h3>
+          <p>
+            md2docx-cn 聚焦一至三级标题、正文、项目符号、编号步骤和引用等常用文章结构，
+            自动应用中文字体、首行缩进、行距、页边距和标题层级。
+          </p>
+          <pre class="code-block"><code>python -m pip install "https://github.com/codex2026-user/md2docx-cn/releases/download/v0.1.1/md2docx_cn-0.1.1-py3-none-any.whl"
+md2docx-cn article.md -o article.docx --author "你的名字"</code></pre>
+          <p>输入文件只在本机处理，不需要账号，也不上传文档。</p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/codex2026-user/md2docx-cn/releases/latest"
+            >免费下载最新版</a>
+            <a class="button button-secondary" href="index.html#preview">查看真实输出</a>
+          </div>
+        </section>
+
+        <h2>三种方法怎么选</h2>
+        <div class="comparison-wrap">
+          <table class="comparison">
+            <thead>
+              <tr>
+                <th>方法</th>
+                <th>上手难度</th>
+                <th>重复使用</th>
+                <th>中文默认排版</th>
+                <th>适合场景</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>复制并手动整理</td>
+                <td>低</td>
+                <td>较差</td>
+                <td>手动调整</td>
+                <td>短文、临时任务</td>
+              </tr>
+              <tr>
+                <td>Pandoc</td>
+                <td>中</td>
+                <td>好</td>
+                <td>需要配置</td>
+                <td>多格式转换、技术用户</td>
+              </tr>
+              <tr>
+                <td>md2docx-cn</td>
+                <td>低</td>
+                <td>好</td>
+                <td>内置常用规则</td>
+                <td>中文文章、投稿和归档</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>转换后要检查什么</h2>
+        <ol>
+          <li><strong>标题层级：</strong>一级、二级、三级标题是否保持清楚的字号差异。</li>
+          <li><strong>中文字体：</strong>正文与标题字体在交付电脑上是否可用。</li>
+          <li><strong>段落节奏：</strong>首行缩进、行距和段前段后是否符合目标要求。</li>
+          <li><strong>列表与引用：</strong>编号是否连续，换行后是否对齐，引用是否明显区分。</li>
+          <li><strong>目标模板：</strong>投稿或单位材料应以对方最新模板为最终标准。</li>
+        </ol>
+
+        <figure class="document-preview guide-preview">
+          <img
+            src="word-preview.png"
+            alt="Markdown 转换后的中文 Word 文档真实排版效果"
+            width="1076"
+            height="865"
+          >
+          <figcaption>md2docx-cn 当前版本的真实输出示例</figcaption>
+        </figure>
+
+        <h2>当前免费版的边界</h2>
+        <p>
+          免费版聚焦常用文章结构，暂不解析复杂表格、公式、脚注、图片和嵌套列表。遇到单位
+          模板、投稿格式、目录批量转换或现有工作流接入，可以提交非敏感需求后单独确认范围。
+        </p>
+
+        <section class="guide-cta">
+          <h2>先免费试用，再决定是否定制</h2>
+          <p>
+            通用转换不收费。需要专用模板或批量流程时，先书面确认需求、价格、修改次数和
+            验收标准，再通过业务邮箱私下提供支付宝付款方式。
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/codex2026-user/md2docx-cn/releases/latest"
+            >下载免费版</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/codex2026-user/md2docx-cn/issues/new?template=custom-template.yml"
+            >提交定制需求</a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="section-shell footer-inner">
+        <p><strong>md2docx-cn</strong><br>中文 Markdown 到 Word 的本地转换工具</p>
+        <div>
+          <a href="index.html">产品首页</a>
+          <a href="mailto:1066536086@qq.com">业务邮箱</a>
+          <a href="https://github.com/codex2026-user/md2docx-cn">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

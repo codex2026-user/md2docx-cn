@@ -623,3 +623,158 @@ footer {
     transition: none;
   }
 }
+
+.guide-header {
+  padding: 82px 0 60px;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(145deg, #f8fcff, #edf6fc);
+}
+
+.guide-header .section-shell,
+.article-body {
+  max-width: 860px;
+}
+
+.guide-header h1 {
+  max-width: 820px;
+  font-size: clamp(2.6rem, 6vw, 4.7rem);
+}
+
+.guide-lead {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.article-body {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.article-body h2 {
+  margin: 70px 0 20px;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+
+.article-body h3 {
+  margin-top: 28px;
+}
+
+.article-body p,
+.article-body li {
+  color: #405266;
+}
+
+.article-body > p,
+.article-body > ul,
+.article-body > ol {
+  font-size: 1rem;
+}
+
+.method-card {
+  margin: 24px 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.method-card.recommended {
+  border-color: #7ebce9;
+  background: var(--blue-soft);
+}
+
+.method-card h3 {
+  margin-top: 0;
+}
+
+.method-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--blue);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.code-block {
+  margin: 18px 0;
+  padding: 18px 20px;
+  overflow-x: auto;
+  border-radius: 9px;
+  color: #dcecff;
+  background: #102a43;
+  font-family: Consolas, "SFMono-Regular", monospace;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.comparison-wrap {
+  margin: 28px 0;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.comparison {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+}
+
+.comparison th,
+.comparison td {
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.comparison th {
+  color: var(--blue-dark);
+  background: #edf6fc;
+  font-size: 0.85rem;
+}
+
+.comparison tr:last-child td {
+  border-bottom: 0;
+}
+
+.guide-preview {
+  margin: 34px 0;
+}
+
+.guide-cta {
+  margin-top: 72px;
+  padding: 40px;
+  border-radius: 18px;
+  color: #fff;
+  background: var(--blue-dark);
+}
+
+.guide-cta h2 {
+  margin-top: 0;
+}
+
+.guide-cta p {
+  color: #c8dced;
+}
+
+.guide-cta .button-secondary {
+  border-color: #fff;
+}
+
+@media (max-width: 600px) {
+  .guide-header {
+    padding-top: 54px;
+  }
+
+  .article-body {
+    padding-top: 48px;
+  }
+
+  .method-card,
+  .guide-cta {
+    padding: 24px;
+  }
+}
