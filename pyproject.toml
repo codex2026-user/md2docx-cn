@@ -7,10 +7,30 @@ name = "md2docx-cn"
 version = "0.1.1"
 description = "Convert Chinese Markdown articles into polished Word documents."
 readme = "README.md"
+authors = [
+    { name = "codex2026-user", email = "1066536086@qq.com" },
+]
+license = "MIT"
 requires-python = ">=3.10"
+keywords = ["markdown", "docx", "word", "chinese", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Office/Business",
+    "Topic :: Text Processing :: Markup",
+]
 dependencies = [
     "python-docx>=1.1,<2",
 ]
+
+[project.urls]
+Homepage = "https://codex2026-user.github.io/md2docx-cn/"
+Source = "https://github.com/codex2026-user/md2docx-cn"
+Issues = "https://github.com/codex2026-user/md2docx-cn/issues"
+Changelog = "https://github.com/codex2026-user/md2docx-cn/releases"
 
 [project.optional-dependencies]
 dev = [

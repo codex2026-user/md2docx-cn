@@ -4,7 +4,6 @@ import re
 import unittest
 from pathlib import Path
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DOCS = PROJECT_ROOT / "docs"
 GUIDE_URL = "https://codex2026-user.github.io/md2docx-cn/markdown-to-word.html"
@@ -34,7 +33,8 @@ class SearchAcquisitionTests(unittest.TestCase):
         ]
 
         self.assertEqual(len(key_files), 1)
-        self.assertEqual(key_files[0].stem, key_files[0].read_text(encoding="utf-8").strip())
+        key_text = key_files[0].read_text(encoding="utf-8").strip()
+        self.assertEqual(key_files[0].stem, key_text)
 
 
 if __name__ == "__main__":

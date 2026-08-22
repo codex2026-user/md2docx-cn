@@ -1,8 +1,8 @@
+import unittest
 from contextlib import redirect_stdout
 from io import StringIO
 from pathlib import Path
 from tempfile import TemporaryDirectory
-import unittest
 
 
 def cli_main():

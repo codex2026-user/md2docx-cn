@@ -4,7 +4,6 @@ import unittest
 from html.parser import HTMLParser
 from pathlib import Path
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 LANDING_PAGE = PROJECT_ROOT / "docs" / "index.html"
 PAGES_WORKFLOW = PROJECT_ROOT / ".github" / "workflows" / "pages.yml"
